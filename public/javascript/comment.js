@@ -1,13 +1,13 @@
 async function commentFormHandler(event) {
     event.preventDefault();
   
-    const comment_text = document.querySelector('textarea[name="comment-content"]').value.trim();
+    const comment_text = document.querySelector('#new-comment-text').value.trim();
   
     const post_id = window.location.toString().split('/')[
       window.location.toString().split('/').length - 1
     ];
-  
-    if (comment_text) {
+    
+    if (comment_text.length>0) {
         const response = await fetch('/api/comments', {
           method: 'POST',
           body: JSON.stringify({
@@ -24,6 +24,8 @@ async function commentFormHandler(event) {
         } else {
           alert(response.statusText);
         }
+      } else {
+          alert('Must enter comment');
       }
   }
   

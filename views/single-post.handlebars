@@ -1,6 +1,23 @@
-<div class='container'>
+<div class='container mb-2'>
+    {{!-- Full post --}}
     {{>post-card post}}
+    {{!-- Leave a comment --}}
+    {{#if loggedIn}}
+<form  class='m-auto' id='new-comment'>
+        <div class="form-group">
+            <label for="new-post-title">Add New Comment</label>
+            <textarea type="textarea" class="form-control" id='new-comment-text'></textarea>
 
+        </div>
+        <div>
+            <button class='btn btn-secondary' type='submit'>Add Comment</button>
+        </div>
+        </form>
+        {{/if}}
+
+
+{{!-- previous comments --}}
+<h5 class='mt-5'>Comments: </h5>
 {{>comments post.comments}}
 </div>
 

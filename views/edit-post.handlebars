@@ -1,0 +1,23 @@
+<section class='mb-5'>
+
+    <form style="width:80%;" class='m-auto' id='edit-post'>
+        <h3 class='mt-5'>Edit Post</h3>
+        <div class="form-group">
+            <label for="new-post-title">Title</label>
+            <input type="text" class="form-control" id="new-post-title" value='{{post.title}}'>
+
+        </div>
+        <div class="form-group">
+            <label for="new-post-content">Content</label>
+            <textarea type="textarea" class="form-control" id="new-post-content">{{post.content}}</textarea>
+        </div>
+        <div>
+            <button class='btn btn-secondary d-inline-flex' type='submit'>Save</button>
+            <button class='btn btn-danger d-inline-flex' id='delete-post'>Delete</button>
+        </div>
+
+    
+    </form>
+</section>
+
+<script src='/javascript/edit.js'></script>

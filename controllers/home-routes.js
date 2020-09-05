@@ -52,7 +52,7 @@ router.get('/signup', (req, res) => {
 });
 
 //route to single post
-router.get('/post/:id', (req, res) => {
+router.get('/posts/:id', (req, res) => {
   Post.findOne({
     where: {
       id: req.params.id

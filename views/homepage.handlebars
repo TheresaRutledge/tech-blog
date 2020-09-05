@@ -1,5 +1,10 @@
 <div class='container'>
     {{#each posts as |post|}}
-    {{>post-card post}}
+    <div href='/posts/{{id}}' class="card mt-2">
+        <div class="card-header d-flex justify-content-between align-items-center" id='post-card'>
+            <a href='posts/{{id}}'><h2>{{title}}</h2></a>
+            <h6 class='text-muted'>Posted By: {{user.username}} on {{format_date created_at}}</h6>
+        </div>
+        </div>
     {{/each}}
 </div>

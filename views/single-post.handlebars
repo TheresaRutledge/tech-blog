@@ -1,19 +1,6 @@
-<div class='container mt-5'>
-    {{> post-card post}}
-    {{#if loggedIn}}
-    <section class='mb-5'>
-        <form style="width:80%;" class='m-auto' id='new-comment'>
+{{>post-card post}}
 
-            <div class="form-group">
-                <textarea type="textarea" class="form-control" id="comment-content"></textarea>
-            </div>
-            <div>
-                <button class='btn btn-secondary' type='submit'>Add Comment</button>
-            </div>
-        </form>
-    </section>
-    {{/if}}
-    {{>comments post.comments}}
-</div>
+{{>comments post.comments}}
+
 
 <script src='/javascript/comment.js'></script>

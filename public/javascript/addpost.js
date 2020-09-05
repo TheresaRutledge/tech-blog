@@ -1,4 +1,4 @@
-async function newPostHandler(event) {
+async function addPostHandler(event) {
     event.preventDefault();
   
     const title = document.querySelector('#new-post-title').value;
@@ -22,4 +22,6 @@ async function newPostHandler(event) {
     }
   }
 
-  document.querySelector('#new-post').addEventListener('submit', newPostHandler);
+
+  document.querySelector('#add-post').addEventListener('submit', addPostHandler);
+

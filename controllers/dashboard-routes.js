@@ -41,6 +41,12 @@ Post.findAll({
 })
 });
 
+//add new post
+
+router.get('/add',(req,res)=>{
+  res.render('add-post');
+})
+
 //edit post - limited to user that posted it
 router.get('/edit/:id',withAuth,(req,res)=>{
     Post.findOne({

@@ -1,23 +1,15 @@
 # Tech Blog  ![](https://img.shields.io/badge/license-ISC-blue)
 
   ## Table of Contents
-  * [Installation](#installation)
-  * [Usage](#usage)
+  * [Description](#description)
   * [License](#license)
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
+  * [Screenshot](#screenshot)
+  * [Website](#website)
   
-  ## Description
+## Description
   Blog site to share your expertise as well as learn from others. hold expertise from all users. Share, comment and read about the latest tech news.
 
-  ## Installation
-  N/A
-
-  ## Usage
-  N/A
-
-  ## License
+## License
  ISC
 
 ## Screenshot

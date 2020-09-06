@@ -1,5 +1,6 @@
 async function loginFormHandler(event) {
     event.preventDefault();
+    console.log('login');
   
     const username = document.querySelector('#login-username').value.trim();
     const password = document.querySelector('#login-password').value.trim();
@@ -20,7 +21,7 @@ async function loginFormHandler(event) {
         alert(`${response.statusText}: Invalid username`)
       }
     }
-  }
-  
-  document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+  };
+
+document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 
